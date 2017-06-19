@@ -1,0 +1,216 @@
+/* Reset
+ -----------------------------------------------------------------------------*/
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+:-moz-ui-invalid:not(output) {
+  box-shadow: none;
+}
+
+/* Grids
+ -----------------------------------------------------------------------------*/
+
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.form-grid {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+@media (min-width: 992px) {
+  .form-grid {
+    flex-direction: row;
+  }
+}
+
+.report-grid {
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+@media (min-width: 992px) {
+  .report-grid {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+  }
+
+  .report-grid__column {
+    width: 100%;
+    max-width: 555px;
+  }
+}
+
+/* Layout
+ -----------------------------------------------------------------------------*/
+
+.header {
+  background-color: #00B8e2;
+}
+
+.header,
+.main {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+/* Typography
+ -----------------------------------------------------------------------------*/
+
+.title {
+  margin-top: 0;
+  margin-bottom: 0;
+  color: #394b50;
+  text-transform: uppercase;
+}
+
+.title,
+.description {
+  color: #394b50;
+  text-align: center;
+}
+
+.title--inverse,
+.description--inverse {
+  color: #fff;
+}
+
+/* Alerts
+ -----------------------------------------------------------------------------*/
+
+.alert {
+  max-width: 300px;
+  padding: 15px;
+  margin-right: auto;
+  margin-bottom: 20px;
+  margin-left: auto;
+  border-radius: 4px;
+  border: 1px solid transparent;
+}
+
+.alert--danger {
+  color: #a94442;
+  border-color: #ebccd1;
+  background-color: #f2dede;
+}
+
+.alert--success {
+  color: #3c763d;
+  border-color: #d6e9c6;
+  background-color: #dff0d8;
+}
+
+/* Inputs
+ -----------------------------------------------------------------------------*/
+
+.form-control {
+  margin-bottom: 20px;
+  padding: 18px 20px;
+  font-size: 14px;
+  color: #5c5c5c;
+  border: none;
+  border-radius: 2px;
+}
+
+@media (min-width: 992px) {
+  .form-control {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 295px;
+    margin-right: 20px;
+    margin-bottom: 0;
+  }
+}
+
+.form-control:focus {
+  background-color: #fff;
+}
+
+/* Button
+ -----------------------------------------------------------------------------*/
+
+.button {
+  display: inline-block;
+  padding: 12px 40px;
+  color: #fff;
+  font-size: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  vertical-align: middle;
+  border: 2px solid #fff;
+  border-radius: 2px;
+  background-color: transparent;
+  user-select: none;
+  transition: all .2s ease-in-out;
+}
+
+.button:focus {
+  outline: 0;
+}
+
+.button:hover,
+.button:focus,
+.button:active {
+  border-color: #104286;
+  background-color: #104286;
+  cursor: pointer;
+}
+
+.button:disabled {
+  border-color: #1b4d90;
+  background-color: #1b4d90;
+}
+
+/* Table
+ -----------------------------------------------------------------------------*/
+
+.table {
+  margin-bottom: 20px;
+  width: 100%;
+  color: #707070;
+  border: 1px solid #b7b7b7;
+  border-collapse: collapse;
+}
+
+.table th {
+  font-size: 14px;
+}
+
+.table th,
+.table td {
+  padding: 8px;
+  border: 1px solid #b7b7b7;
+}
+
+.table th:first-child,
+.table td:first-child {
+  display: none;
+}
+
+@media (min-width: 992px) {
+  .table th:first-child,
+  .table td:first-child {
+    display: table-cell;
+  }
+}
+
+/* Chart
+ -----------------------------------------------------------------------------*/
+.chart-canvas {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 300px;
+  height: 300px;
+}
